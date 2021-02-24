@@ -70,7 +70,7 @@ def del_tod(position):
     
     tod = TODOLis.query.get(position)
     if tod is None:
-        raise APIException('Favorite not found', status_code=404)
+        raise APIException('TodoList not found', status_code=404)
 
     db.session.delete(tod)
 

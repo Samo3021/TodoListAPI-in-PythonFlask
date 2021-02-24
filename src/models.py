@@ -27,6 +27,7 @@ class TODOLis(db.Model):
 
     def serialize(self):
         return {
+            "id": self.id,
             "done": self.done,
             "label": self.label,
             # do not serialize the password, its a security breach
